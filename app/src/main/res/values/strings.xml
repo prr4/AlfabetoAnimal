@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Alfabeto Animal</string>
+
+    <string name="st_iv_image">história</string>
+    <string name="st_iv_bar">linha</string>
+    <string name="st_iv_logo">logo aprendiz</string>
+    <string name="st_bt_prev">anterior</string>
+    <string name="st_bt_next">próximo</string>
+</resources>

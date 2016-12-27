@@ -1,0 +1,76 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_centerInParent="true"
+    android:gravity="top"
+    android:background="@color/my_yellow"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        android:gravity="center"
+        android:src="@drawable/alfa1"
+        android:background="@color/my_yellow"
+        android:contentDescription="@string/st_iv_image"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:baselineAlignBottom="false" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_top"
+            android:layout_gravity="top"
+            android:src="@drawable/bar"
+            android:contentDescription="@string/st_iv_bar" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/bt_prev"
+            android:onClick="prev"
+            android:layout_gravity="left|center_vertical"
+            android:src="@drawable/btprev"
+            android:background="@color/no_color"
+            android:contentDescription="@string/st_bt_prev" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:onClick="next"
+            android:id="@+id/bt_next"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/btnext"
+            android:background="@color/no_color"
+            android:contentDescription="@string/st_bt_next" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_bottom"
+            android:layout_gravity="bottom"
+            android:src="@drawable/bar"
+            android:contentDescription="@string/st_iv_bar" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/iv_logo"
+            android:layout_gravity="right|bottom"
+            android:src="@drawable/logo"
+            android:contentDescription="@string/st_iv_logo" />
+
+    </FrameLayout>
+
+</FrameLayout>
